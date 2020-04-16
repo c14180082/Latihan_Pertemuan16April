@@ -1,4 +1,18 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+Bilangan 1 : <br>
+<input [(ngModel)]="a" type="number" id="a">
+<br>
+Bilangan 2 : <br>
+<input [(ngModel)]="b" type="number" id="b">
+<br>
+<button (click)="Submit()">Submit</button>
+
+<button (click)="Reset()">Reset</button>
+
+<br>
+
+{{string_hasil}} <br>
+{{tipe_pola}} <br>
+
+<div *ngFor="let data of total">
+  {{data}}
+</div>
